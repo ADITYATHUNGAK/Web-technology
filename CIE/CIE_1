@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My First Web Page</title>
+	<style>
+		body{
+			background-color:cyan;
+	</style>
+
+</head>
+
+<body>
+	<p><marquee direction="Right">Left to right</marquee></p>
+	<p><marquee direction="Left">Right to Left</marquee></p>
+	<img src ="https://www.bing.com/images/search?view=detailV2&ccid=UUv%2f2s1q&id=2396E8B1010C315EB268D0D7A54BE297745EC61F&thid=OIP.UUv_2s1qu2uWuU2kpxwI5gHaFO&mediaurl=https%3a%2f%2fe00-especiales-marca.uecdn.es%2fjuegos-olimpicos%2fimages%2fenciclopedia%2frugby%2ffoto-grande.jpg&exph=1320&expw=1868&q=rubgy&FORM=IRPRST&ck=E2F1D5F3CA1F80FFF5E267A5F6025ED5&selectedIndex=0&itb=0" alt="err" width=200" height="200">
+	<img src ="https://www.bing.com/images/search?view=detailV2&ccid=%2fP5NKzWW&id=DF321AC2B1ECFDDEFE73C2A0B10B25441BE97CB0&thid=OIP._P5NKzWWIrRzV_PGKBaZFwHaFA&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.fcfe4d2b359622b47357f3c628169917%3frik%3dsHzpG0QlC7Ggwg%26riu%3dhttp%253a%252f%252fwww.japantimes.co.jp%252fwp-content%252fuploads%252f2015%252f10%252fsp-rugby-a-20151006.jpg%26ehk%3dr%252bBi0dHHlNf1%252fJyBQMeCH65H%252fdJubM4hRBdN8A3jVY0%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=2320&expw=3428&q=rubgy&FORM=IRPRST&ck=FCC173758ECC0D0502712F4283DE1B86&selectedIndex=1&itb=0" alt="err" width=200" height="200">
+	<a href="https://www.w3schools.com">W3 schools</a><br>
+	<h1 style="color:red">this is sample</h1>
+	<h2 style="color:green">this is sample</h2>
+	<p> this is <mark> mark</mark> this is <del> delete</del></p>
+</body>
+</html>
