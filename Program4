@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Chornicle</title>
+    <style>
+        body{
+            font-family:'Georgia',Serif;
+            line-height:1.6;
+            color:#333;
+            max-width:1200px;
+            margin:0 auto;
+            padding:20px;
+            background-color:#f4f4f4;
+
+        }
+        header{
+            background-color: #1a1a1a;
+            color: #fff;
+	        padding:20px;
+	        text align:center;
+	        
+        }
+	    header h1{
+	        margin:0;
+	        font-size:2.5em;
+	    }
+	    nav{
+	        background-color:#333;
+	        color:#fff;
+	        padding:10px;
+        }
+	    nav ul{
+	        list-value-type:none;
+	        padding:0;
+	        margin:0;
+	        display:flex;
+	        justify-content:center;
+	    }
+	    nav ul li{
+	        margin:0 10px;
+	    }
+	    nav ul li a{
+	        color:#fff;
+	        text-decoration:none;
+        }
+        main{
+	        display:flex;
+	        margin-top:20px;
+        }
+        section{
+	        flex:2;
+	        margin-right:20px;
+        }
+        article{
+            background-color:#fff;
+            padding:20px;
+            margin-bottom:20px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+	    article h2{
+	        color:#1a1a1a;
+	        font-size:1.8em;
+	    }
+	    aside{
+	        flex:1;
+	        background-color:#e6e6e6;
+	        padding:20px;
+	        box-shadow:0 0 10px rgba(0,0,0,0.1);
+	    }
+	    figure{
+	        margin:0;
+	        text-align:center;
+	    }
+	    figure img{
+	        max-width:100%;
+	        heiht:auto;
+	    }
+	    Fig caption{
+	        font-style:italic;
+	        color:#666;
+	        font-size:0.9em;
+	    }
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-bottom:20px;
+        }
+	    th,td{
+	        border:1px solid #ddd;
+	        padding:10px;
+	        text-align:left;
+	    }
+	    th{
+	        background-color:#f2f2f2;
+	    }
+	    footer{
+	        background-color:#1a1a1a;
+	        color:#fff;
+	        text-align:center;
+	        padding:10px;
+	        margin-top:20px;
+	    }
+    </style>
+</head>
+<body>
+    <header>
+	    <h1>The Daily Chronicle</h1>
+    </header>
+    <nav>
+	    <ul>
+	        <li><a href="#">Home</a></li>
+	        <li><a href="#">Politics</a></li>
+	        <li><a href="#">Technology</a></li>
+	        <li><a href="#">Sports</a></li>
+	        <li><a href="#">Entertainment></a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <h2>Breaking news:major technological breakthrough</h2>
+		        <p>Scientists have announced a groundbreaking discovery in the field of qunatum computing,potentially revolutionizing the tech industry</p>
+	            <figure>
+		            <img src="https://elements-resized.envatousercontent.com/elements-video-cover-images/97dbe928-d922-4a81-a244-036cc42db92f/video_preview/video_preview_0000.jpg?w=1200&h=630&cf_fit=crop&q=85&format=jpeg&s=eca2133f437d86a79487bc6e5f6e685e2e9f8e8d27d6c7b072e44b3759b83972"alt="Quantum computer">
+		            <figcaption>A state-of-the-art quantum computer of the the research facility.</figcaption>
+	            </figure>
+            </article>
+	        <article>
+		        <h2>Local Sports Teams Wins Chamionship.</h2>
+		        <p>In a thrillin match,our local team secured victory in the the national chamionship,bringing pride to our city.</p>
+		        <table>
+		            <tr>
+			            <th>Team</th>
+			            <th>Score</th>
+		            </tr>
+		            <tr>
+			            <th>Local Heros</th>
+			            <th>3</th>
+		            </tr>
+		            <tr>
+			            <th>Visting Challengers</th>
+			            <th>2</th>
+		            </tr>
+		        </table>
+	        </article>
+        </section>
+	    <aside>
+	        <h3>Weather Update</h3>
+	        <p>Except suuny skies with a high of 75°F(24°C) today</p>
+	        <h3>Upcoming Events.</h3>
+	        <ul>
+		        <li>City Festival-This Weekend</li>
+		        <li>Tech Conference-Next Month</li>
+		        <li>Charity Run-In Two Weeks</li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy;2023 The Daily Chroncile.All rights reserved.</p>
+    </footer>
+</body>
+</html>
