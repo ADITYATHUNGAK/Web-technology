@@ -1,125 +1,234 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<title>News Paper</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily News</title>
+    <style>
+        /* General Reset & Typography */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            background-color: #2c3e50; /* Professional Dark Blue/Grey */
+            color: white;
+            padding: 20px 10px;
+            border-bottom: 5px solid #e74c3c; /* Accent line */
+        }
+        
+        header h1 {
+            margin: 0;
+            font-family: 'Georgia', serif; /* Newspaper feel */
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header h3 {
+            margin: 5px 0 0 0;
+            font-weight: 300;
+            font-size: 1em;
+            color: #bdc3c7;
+        }
+
+        /* Navigation Bar */
+        nav {
+            text-align: center;
+            background-color: #34495e;
+            padding: 0;
+            position: sticky; /* Keeps nav visible on scroll */
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: inline-block;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        /* Main Layout */
+        main {
+            display: flex; /* Creates side-by-side layout */
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+            padding: 0 15px;
+        }
+
+        /* Left Column (Articles) */
+        .content-column {
+            flex: 3; /* Takes up 3 parts of space */
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            border-radius: 5px;
+        }
+
+        .article-box {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            font-family: 'Georgia', serif;
+            color: #2c3e50;
+            border-left: 5px solid #e74c3c;
+            padding-left: 10px;
+        }
+
+        /* Right Column (Sidebar) */
+        aside {
+            flex: 1; /* Takes up 1 part of space */
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            height: fit-content;
+        }
+
+        /* Image Styling */
+        figure {
+            margin: 0;
+            text-align: center;
+            background: #eee;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        figcaption {
+            font-style: italic;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background: white;
+            font-size: 0.9em;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.8em;
+        }
+    </style>
 </head>
-<style>
-header{
-text-align:center;
-background-color:green;
-color:white;
-padding:10px;
-}
-nav{
-text-align:center;
-background-color:black;
-color:#fff;
-padding:10px;
-}
-.section1{
-background-color:grey;
-}
-.section2{
-background-color:grey;
-}
-img{
-margin:0;
-text-align:center;
-}
-a{
-color:white;
-}
-main{
-margin-top:10px;
-padding:10px;
-}
-figurecaption{
-font-style:italic;
-font-size:0.4cm;
-}
-aside{
-background-color:grey;
-flex:1;
-padding:20px;
-}
-table,td,th{
-border:1px solid black;
-border-collapse:collapse;
-}
-td,th{
-padding:15px;
-text-align:center;
-}
-footer{
-text-align:center;
-background-color:green;
-color:white;
-padding:10px;
-}
-</style>
 <body>
+
 <header>
-<h1>Daily News</h1>
-<h3>Your source for the latest update</h3>
+    <h1>The Daily News</h1>
+    <h3>Your trusted source for the latest updates</h3>
 </header>
+
 <nav>
-<a href ="#">Home</a>
-<a href ="#">World</a>
-<a href ="#">Space</a>
-<a href ="#">Entertainment</a>
+    <a href="#">HOME</a>
+    <a href="#">WORLD</a>
+    <a href="#">SPACE</a>
+    <a href="#">ENTERTAINMENT</a>
 </nav>
+
 <main>
-<section>
-<article>
-<div class="section1">
-<h2>Breaking news : Technology Advances</h2>
-<p>The world of technology evoloving at a rapid pace...</p>
-</div>
-<div class="section2">
-<h2>Health:Tips for Better Life</h2>
-<p>Health is wealth . Here are some tips to maintain a healthy lifestyle...</p>
-</div>
-<figure>
-<img src="kolluru.jpeg" alt="RCB"><br>
-<figurecaption>
-Image:Latest News Update
-</figurecaption> 
-</figure>
-</article>
-</section>
-<section>
-<aside>
-<h2>Advertisement...</h2>
-<p>It is a advertisement..</p>
-</aside>
-<article>
-<p style="text-align:center">Latest sports Scores</p>
-<table style="width:80%">
-<tr>
-<th>Team</th>
-<th>Score</th>
-<th>opponent</th>
-</tr>
-<tr>
-<td>RCB</td>
-<td>98</td>
-<td>CSK</td>
-</tr>
-<tr>
-<td>CSK</td>
-<td>88</td>
-<td>KKR</td>
-</tr>
-<tr>
-<td>PBKS</td>
-<td>73</td>
-<td>RCB</td>
-</tr>
-</table>
-</article>
-</section>
+    <section class="content-column">
+        <article class="article-box">
+            <h2>Breaking News: Technology Advances</h2>
+            <p>The world of technology is evolving at a rapid pace. AI and machine learning are transforming how we interact with data, while quantum computing promises to solve problems previously thought impossible.</p>
+        </article>
+
+        <article class="article-box">
+            <h2>Health: Tips for a Better Life</h2>
+            <p>Health is wealth. Experts suggest that maintaining a balanced diet, getting 8 hours of sleep, and walking 10,000 steps a day can significantly improve longevity.</p>
+        </article>
+
+        <figure>
+            <img src="https://placehold.co/600x300?text=Breaking+News+Image" alt="News Update">
+            <figcaption>Image: Latest Global Summit</figcaption> 
+        </figure>
+    </section>
+
+    <aside>
+        <div style="background: #fff; padding: 15px; border: 1px dashed #999; margin-bottom: 20px;">
+            <h3 style="margin-top:0;">Advertisement</h3>
+            <p>Big Sale! 50% Off on all Electronics this weekend.</p>
+        </div>
+
+        <h3 style="text-align:center; border-bottom: 2px solid #333; padding-bottom: 5px;">Latest Sports Scores</h3>
+        <table>
+            <tr>
+                <th>Team</th>
+                <th>Score</th>
+                <th>Opponent</th>
+            </tr>
+            <tr>
+                <td>RCB</td>
+                <td>98</td>
+                <td>CSK</td>
+            </tr>
+            <tr>
+                <td>CSK</td>
+                <td>88</td>
+                <td>KKR</td>
+            </tr>
+            <tr>
+                <td>PBKS</td>
+                <td>73</td>
+                <td>RCB</td>
+            </tr>
+        </table>
+    </aside>
 </main>
+
 <footer>
-<p>@ all copyrights reserved</p>
+    <p>&copy; 2023 The Daily News. All copyrights reserved.</p>
 </footer>
+
 </body>
 </html>
